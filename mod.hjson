@@ -1,0 +1,17 @@
+{
+  "name" : "trieg-melu",
+  "displayName" : "Trieg",
+  "description" :
+'''
+This modification adds new planet called "Trieg" and two little planets "Terra" and "B-073".
+[gray]There is a list of peoples who helped with the mod: []
+@Melushka_frr / Owner
+RuRu / Spriter / Alpha tester
+Polyoshko / Mapper / Spriter / Alpha tester 
+''',
+  "subtitle" : "beta!11! :3",
+  "author" : "@Melushka_frr",
+  "planet" : "trieg", 
+  "version" : 0.1,
+  "minGameVersion" : 159.4
+} 

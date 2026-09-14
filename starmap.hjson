@@ -1,0 +1,5 @@
+planets : [
+add: [
+{ name: trieg, axis0: 8, axis120: 110 }
+]
+]
