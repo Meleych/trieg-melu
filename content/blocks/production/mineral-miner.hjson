@@ -1,0 +1,33 @@
+type: Drill
+size: 3
+name: Mineral Miner
+description: "Mineral miner
+"
+requirements:[beryllium/60,graphite/30]
+customShadow: false
+
+consumes:{
+liquids: {
+liquids:[
+slag/0.03987
+]
+
+optional: false
+booster: false
+}
+}
+
+tier: 2
+drawRim: false
+drawSpinSprite: true
+drawMineItem: true
+squareSprite: false
+drillTime: 197.5
+
+baseExplosiveness: 0
+
+shownPlanets: [B-073]
+
+category: production
+research: beam-drill
+researchCostMultiplier: 0.05

@@ -1,0 +1,143 @@
+type: ItemTurret
+name: Delta
+description: "Targets air only."
+size: 2
+
+category: turret
+research: t-turret
+shownPlanets: [trieg, notva]
+researchCostMultiplier: 0.05
+
+requirements:[
+lead/70
+trieg-aluminum/50
+]
+
+reload: 100
+inaccuracy: 20.5
+range: 160
+
+targetAir: true
+targetGround: false
+
+shootEffect: shootBig
+smokeEffect: shootSmokeSquareBig
+shootSound: shootScatter
+recoil: 3.5
+recoilTime: 12
+shake: 2
+heatColor: ffd37f
+
+shoot:{
+shots: 12
+shotDelay: 4
+firstShotDelay: 30
+collidesGround: false
+}
+
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
+}
+
+ammoTypes:{
+lead:{
+type: BasicBulletType
+collidesGround: false
+
+speed: 8
+lifetime: 45
+
+width: 8
+height: 12
+
+damage: 5
+impact: true
+knockback: 1.5
+
+frontColor: ffffff
+backColor: e5d7cf
+
+trailColor: e5d7cf
+trailChance: 1
+trailLength: 8
+trailWidth: 1.8
+
+shrinkX: 0.2
+shrinkY: 0.35
+
+hitEffect: hitBulletBig
+despawnEffect: hitBulletColor
+shootEffect: shootBig
+}
+
+metaglass:{
+type: BasicBulletType
+collidesGround: false
+
+speed: 6.6
+lifetime: 60
+
+width: 8
+height: 12
+
+damage: 6
+impact: true
+knockback: 0.75
+
+homingPower: 0.075
+homingDelay: 30
+
+frontColor: ffffff
+backColor: e5d7cf
+
+trailColor: e5d7cf
+trailChance: 1
+trailLength: 8
+trailWidth: 1.8
+
+shrinkX: 0.2
+shrinkY: 0.35
+
+hitEffect: hitBulletBig
+despawnEffect: hitBulletColor
+shootEffect: shootBig
+}
+}
+
+drawer:{
+type: DrawTurret
+
+parts:[
+{
+suffix: "-part"
+x: 0
+y: 0
+under: false
+
+moves:[
+{
+progress:{
+type: recoil
+}
+y:-3.2
+}
+{
+progress:{
+type: warmup
+ops:[
+{
+op: compress
+start:0
+end:0.35
+}
+]
+}
+y:0.5
+}
+]
+}
+]
+}
+shownPlanets: [trieg, notva]

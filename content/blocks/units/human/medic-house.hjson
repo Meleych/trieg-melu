@@ -1,0 +1,22 @@
+type: UnitCargoLoader
+polyColor: 84F491FF
+polySides: 3
+polyRadius: -1
+size: 2
+name: House
+solid: false
+shownPlanets: [Terra]
+category: effect
+description: "
+MEN
+"  
+unitType: medic-men
+configurable: false
+customShadow: false
+consumes:{
+}
+buildVisibility: sandboxOnly
+
+requirements:[copper/50]
+
+envEnabled: -1

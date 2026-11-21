@@ -1,0 +1,57 @@
+type: PowerTurret
+size: 2
+name: Storm
+category: turret
+customShadow: false
+shownPlanets: [trieg, notva]
+
+consumes:{
+power: 2.5
+}
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
+}
+drawer:{
+type: DrawTurret
+parts:[
+{
+suffix: "-barrel"
+under: true
+moveY: -2
+progress: recoil
+}]}
+  
+range: 175
+reload: 180
+shake: 7.5
+shootType:{
+type: LaserBulletType
+length: 175
+damage: 60
+impact: true
+knockBack: 1.5
+hitEffect: casing4
+status: melting
+targetAir: true
+targetGround: true
+shootSound: shootLancer
+}
+requirements:[
+  trieg-aluminum/25
+  graphite/50
+  lead/30
+  silicon/45
+]
+research: {
+   parent: t-shotgun
+   objectives: [
+      {
+         type: OnSector
+         preset: pastLandingZone
+      }
+   ]
+}
+researchCostMultiplier: 0.7
+shownPlanets: [trieg, notva]

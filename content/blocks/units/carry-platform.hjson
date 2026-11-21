@@ -1,0 +1,29 @@
+type: UnitCargoLoader
+size: 3
+name: Carry platform
+health: 475
+
+description: "Builds a drone which delivers items."
+
+customShadow: false
+itemCapacity: 500
+envEnabled: -1
+unitType: t-carry
+
+polyRadius: 12.5
+polySides: 3
+
+requirements:[
+trieg-aluminum/225
+lead/175
+silicon/75
+titanium/50
+]
+consumes:{
+power: 3
+}
+research: t-catapult
+researchCostMultiplier: 0.05
+shownPlanets: [trieg, notva]
+
+alwaysUnlocked: false

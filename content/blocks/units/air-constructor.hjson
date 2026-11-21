@@ -1,0 +1,44 @@
+type: UnitFactory
+size: 3
+configurable: true
+consumes: {
+  power: 1
+}
+plans: [
+  {
+    unit: wich
+    time: 600
+    requirements:[
+      silicon/50
+      lead/20
+    ]
+  }
+  {
+    unit: wasp
+    time: 900
+    requirements:[
+      silicon/40
+      lead/70
+    ]
+  }
+  {
+    unit: explode
+    time: 600
+    requirements:[
+      silicon/20
+      coal/10
+    ]
+  }
+]
+requirements: [
+   trieg-aluminum/250
+   lead/175
+   graphite/75
+   silicon/125
+   copper/1
+]
+category: units
+name: Air constructor
+research: naval-constructor
+researchCostMultiplier: 0.15
+shownPlanets: [trieg, notva]

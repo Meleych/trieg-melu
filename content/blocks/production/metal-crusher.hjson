@@ -1,0 +1,53 @@
+type: AttributeCrafter
+size: 3
+name: "Metal crusher"
+description: "Crushes metal tiles and gets scrap"
+
+customShadow: false
+attribute: t-scrap
+envEnabled: -1
+
+category: production
+outputItem: scrap/2
+baseEfficiency: 0
+customShadow: false
+
+displayEfficiency: true
+requirements:[trieg-aluminum/125,lead/75,silicon/50]
+minEfficiency: 0.1
+
+hasPower: true
+consumes: {
+power: 0.766
+}
+research: {
+   parent: ice-crusher
+   researchCostMultiplier: 0.15
+   objectives: [
+      {
+         type: OnSector
+         preset: forgottenMountains
+      }
+   ]
+}
+requiresUnlock: true
+shownPlanets: [trieg, notva]
+drawer: {
+  type: DrawMulti
+  drawers: [
+        {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 1.8
+      x: 0
+      y: 0
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+      x: 0
+      y: 0
+    }
+  ]
+}

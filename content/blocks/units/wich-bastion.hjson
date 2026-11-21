@@ -1,0 +1,35 @@
+type: UnitCargoLoader
+buildTime: 600
+unitBuildTime: 900
+health: 240
+polyColor: BF92F9FF
+polySides: 3
+polyRadius: 8
+size: 2
+name: Wich platform
+category: effect
+description: "
+Constructs [accent]Wichs[] to attack.
+
+[red]- Limit 1 (per building)
+[red]- Requires power
+[green]- Wichs attack enemy's!
+
+[gray][ !Crux only! ]
+"  
+unitType: wich-t
+configurable: false
+customShadow: false
+consumes:{
+power: 1.4
+liquids: {
+liquids:[
+water/0.416667
+]
+}
+}
+buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/275,lead/125, graphite/150, silicon/125]
+
+envEnabled: -1

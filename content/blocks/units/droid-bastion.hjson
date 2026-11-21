@@ -1,0 +1,41 @@
+type: UnitCargoLoader
+polyColor: 84F491FF
+polySides: 4
+polyRadius: 8
+size: 2
+name: Droid platform
+shownPlanets: [trieg, notva]
+category: effect
+description: "
+Constructs [accent]Droids[] to rebuild and assist the player.
+
+[red]- Limit 1 (per building)
+[red]- Requires power
+[green]- Droids help rebuild
+"  
+unitType: droid
+unitBuildTime: 1200
+configurable: false
+consumes:{
+power: 1
+liquids: {
+liquids:[
+water/0.217777
+]
+}
+}
+//buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/250,lead/150, graphite/175, silicon/75]
+
+envEnabled: -1
+research: {
+   parent: pickaxe-bastion
+   researchCostMultiplier: 0.05
+   objectives: [
+      {
+         type: OnSector
+         preset: pastLandingZone
+      }
+   ]
+}

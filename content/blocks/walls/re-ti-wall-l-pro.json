@@ -1,0 +1,21 @@
+{
+  "type" : "wall",
+  "name" : "Large reinforced titanium wall"
+  "description" : "-protects buildings from enemy bullets."
+  "size" : 2,
+  "health" : 1800,
+  "absorbLasers" : true,
+  "insulated" : true,
+  "category" : "defense",
+  "research" : {
+   "parent" : "re-ti-wall-l", 
+   "requirements" : [
+    {"item": "titanium", "amount" : 700},
+    {"item": "metaglass", "amount" : 300}
+    ]
+   }, 
+  "requirements" : [
+   {"item": "titanium", "amount": 32},
+   {"item": "metaglass", "amount": 8}
+  ],
+} 

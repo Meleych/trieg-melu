@@ -1,0 +1,28 @@
+type: Constructor
+name:Block constructor
+description: 
+'''
+  Crafts blocks
+'''
+size: 2
+category: distribution
+requirements: [
+  t-iron/140
+] 
+hasPower: true
+maxBlockSize: 1
+consumes: {
+}
+buildSpeed: 1.5
+filter: [
+t-delta,
+t-shotgun,
+energy-node,
+repair-pylon,
+alu-wall,
+alu-wall-large
+]
+research: core-beggining
+squareSprite: false
+conductivePower: false
+researchCostMultiplier: 0.05

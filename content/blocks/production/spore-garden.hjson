@@ -1,0 +1,58 @@
+type: AttributeCrafter
+size: 4
+name: "Spore garden"
+description: "Produce spores"
+
+customShadow: false
+attribute: spores
+envEnabled: -1
+
+category: production
+outputItem: spore-pod/6
+baseEfficiency: 0.75
+customShadow: false
+
+displayEfficiency: true
+requirements:[trieg-aluminum/175,lead/125,silicon/75,metaglass/50]
+minEfficiency: 0
+
+hasPower: true
+hasLiquids: true
+consumes: {
+power: 0.666
+liquids: {
+liquids:[
+water/0.216667
+]
+}
+}
+research: {
+   parent: t-sand-strate
+   researchCostMultiplier: 0.15
+   objectives: [
+      {
+         type: OnSector
+         preset: groundZero
+      }
+   ]
+}
+requiresUnlock: true
+shownPlanets: [trieg, notva]
+drawer: {
+  type: DrawMulti
+  drawers: [
+     {
+      type: DrawRegion
+      suffix: -bottom
+    }
+         {
+    type: DrawLiquidRegion
+    suffix: -liquid
+    drawLiquid: water
+     }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

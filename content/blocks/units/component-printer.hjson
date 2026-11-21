@@ -1,0 +1,32 @@
+type: Constructor
+name:Component printer
+description: 
+'''
+  Crafts components used for unit assembly. Requires power.
+'''
+size: 3
+category: units
+requirements: [
+  trieg-aluminum/225
+  lead/125
+  silicon/100
+  titanium/50
+] 
+hasPower: true
+maxBlockSize: 2
+consumes: {
+  power: 1
+}
+buildSpeed: 1.5
+filter: [
+t-delta,
+t-shotgun,
+energy-node,
+repair-pylon,
+alu-wall,
+alu-wall-large
+]
+research: t-units
+squareSprite: false
+conductivePower: true
+researchCostMultiplier: 0.5

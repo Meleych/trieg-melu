@@ -1,0 +1,36 @@
+type: Drill
+size: 2
+name: Drill
+description: "Drills the ground for any possible extract.
+
+[green]- Reliable
+[green]- Cheap
+"
+requirements:[lead/10,trieg-aluminum/20]
+customShadow: false
+
+consumes:{
+liquids: {
+liquids:[
+water/0.03987
+]
+
+optional: true
+booster: true
+}
+}
+
+tier: 2
+drawRim: false
+drawSpinSprite: true
+drawMineItem: true
+squareSprite: false
+drillTime: 197.5
+
+baseExplosiveness: 0
+
+shownPlanets: [trieg, notva]
+
+category: production
+research: trieg-drills
+researchCostMultiplier: 0.05

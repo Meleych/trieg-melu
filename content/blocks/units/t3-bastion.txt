@@ -1,0 +1,36 @@
+type: UnitCargoLoader
+polyColor: 84F491FF
+polySides: 5
+polyRadius: 9.5
+size: 3
+name: "??? platform [WIP]"
+category: effect
+description: "
+Constructs [accent]???[] to repair buildings
+[red]- Limit 1 (per building)
+[red]- Requires power
+[green]- ??? repair buildings
+
+[red][Can be placed in sandbox only.]
+"  
+unitType: mega
+configurable: false
+customShadow: false
+consumes:{
+power: 1.86
+}
+buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/275,lead/175, graphite/200, silicon/150, titanium/75]
+
+envEnabled: -1
+research: {
+   parent: droid-bastion
+   researchCostMultiplier: 0.05
+   objectives: [
+      {
+         type: OnSector
+         preset: pastLandingZone
+      }
+   ]
+}

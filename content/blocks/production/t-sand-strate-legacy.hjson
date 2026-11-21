@@ -1,0 +1,44 @@
+type: AttributeCrafter
+size: 2
+name: Sand Strate
+description: "[red][LEGACY, CAN'T BE PLACED.]
+[white]Scrapes sand particles from the ground, if there is any."
+
+customShadow: false
+attribute: t-sand
+envEnabled: -1
+buildVisibility: sandboxOnly
+
+category: crafting
+outputItem: sand/2
+baseEfficiency: 0
+customShadow: false
+
+displayEfficiency: true
+requirements:[lead/25,graphite/15]
+minEfficiency: 0.1
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawBlurSpin
+suffix: "-rotator1"
+x: -3.75
+y: 3.35
+blurThresh: 0
+rotateSpeed: 2.5
+}
+{
+type: DrawBlurSpin
+suffix: "-rotator2"
+blurThresh: 0
+x: 2
+y: -3
+rotateSpeed: 2.5
+}
+{
+type: DrawDefault
+}
+]
+}

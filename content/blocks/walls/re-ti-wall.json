@@ -1,0 +1,17 @@
+{
+  "type" : "wall",
+  "name" : "Reinforced titanium wall"
+  "description" : "-protects buildings from enemy bullets."
+  "size" : 1,
+  "health" : 450,
+  "category" : "defense",
+  "research" : {
+   "parent" : "alu-wall", 
+   "requirements" : [
+    {"item": "titanium", "amount" : 25}
+    ]
+   }, 
+  "requirements" : [
+   {"item": "titanium", "amount": 6}
+  ],
+} 

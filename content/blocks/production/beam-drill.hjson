@@ -1,0 +1,53 @@
+name: "Beam drill"
+description: "Extracts useful resources from walls."
+
+type: BeamDrill
+category: production
+size: 2
+range: 1
+tier: 3
+laser: trenolaser
+laserEnd: trenolaser-end
+laserCenterBoost: trenolaser
+laserEndBoost: trenolaser-end
+sparks: 0
+glowIntensity: 0
+glowRegion: trenolaser-end
+glowColor: ffffff
+heatColor: ffffff
+laserWidth: 0.5
+pulseIntensity: 0.1
+
+squareSprite: false
+drillTime: 150
+heatPulseScl: 100
+
+research: {
+    parent: core-flame
+    requirements: [
+        beryllium/30
+    ]
+}
+
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawDefault
+        },
+        {
+            type: DrawSpikes
+            color: 557799
+            amount: 4
+        }
+    ]
+}
+
+hasPower: true
+consumes: {
+    power: 0.25
+}
+
+requirements: [
+    beryllium/40
+]

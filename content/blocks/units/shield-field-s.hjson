@@ -1,0 +1,34 @@
+type: UnitCargoLoader
+unitBuildTime: 375
+buildTime: 675
+health: 460
+polyColor: eab677ff
+polySides: 3
+polyRadius: 12
+size: 3
+solid: true
+teamPassAble: true
+name: Shield field
+category: effect
+drawTeam: true
+description: "
+[red] - Has limit
+"  
+unitType: shield-field-a
+configurable: false
+customShadow: false
+consumes:{
+power: 2.067
+liquids: {
+liquids:[
+water/0.217777
+]
+}
+}
+//buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/225,lead/125, graphite/175, silicon/225]
+
+envEnabled: -1
+research: direction-shield-s
+researchCostMultiplier: 0.15

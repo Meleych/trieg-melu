@@ -1,0 +1,173 @@
+type: ItemTurret
+size: 3
+outlineRadius: 0
+range: 240
+name: Artillery
+health: 430
+shownPlanets: [trieg, notva]
+envEnabled: -1
+
+description: "Fires multiple homing missiles the the target.
+
+[gray][ Crux technology. ]"
+
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
+}
+
+shootWarmupSpeed: 0.05
+minWarmup: 0.9
+
+research: t-turrets
+rotateSpeed: 0
+recoil: 0
+outlineRadius: 0
+
+researchCostMultiplier: 0.15
+shootSound: shootScathe
+
+shootY: 0
+hasShadow: true
+customShadow: false
+category: turret
+reload: 240
+shake: 0.65
+
+shoot:{
+shots: 2
+shotDelay: 0
+}
+
+shootEffect:{
+type: RadialEffect
+effect: shootSmokeMissile
+rotationOffset: 45
+}
+
+requirements:[
+trieg-aluminum/250
+lead/170
+graphite/140
+silicon/150
+]
+buildTime: 300
+
+rotate: false
+shootCone: 180
+inaccuracy: 0
+
+ammoTypes:{
+silicon: {
+type: BulletType
+speed: 30
+lifetime: 10
+damage: 0
+collides: false
+instantDisappear: true
+despawnHit: true
+fragBullets: 4
+fragSpread: 90
+fragRandomSpread: 0
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullet:{
+type: MissileBulletType
+speed: 1
+trailEffect: none
+trailChance: 0.25
+trailWidth: 2
+trailLength: 24
+width: 10
+height: 17
+lifetime: 120
+homingPower: 0.1
+homingDelay: 20
+homingRange: 300
+impact: true
+knockback: 0
+
+damage: 15
+splashDamage: 15
+splashDamageRadius: 20
+scaledSplashDamage: true
+frontColor: 7d4c27
+accel: 0.045
+hitEffect: {
+type: WrapEffect
+effect: titanExplosionFrag
+color: 7d4c27
+}
+hitSound: unitExplode3
+despawnHit: true
+hitShake: 6.5
+}
+}
+
+graphite: {
+type: BulletType
+reloadMultiplier: 0.5
+speed: 30
+lifetime: 10
+damage: 0
+collides: false
+instantDisappear: true
+despawnHit: true
+fragBullets: 4
+fragSpread: 90
+fragRandomSpread: 0
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullet:{
+type: MissileBulletType
+speed: 0.75
+trailEffect: none
+trailChance: 0.25
+trailWidth: 2
+trailLength: 12
+width: 10
+height: 17
+lifetime: 140
+homingPower: 0.05
+homingDelay: 25
+homingRange: 300
+impact: true
+knockback: 0
+
+damage: 20
+splashDamage: 20
+splashDamageRadius: 25
+scaledSplashDamage: true
+frontColor: 7d4c27
+accel: 0.045
+hitEffect: {
+type: WrapEffect
+effect: titanExplosionFrag
+color: 7d4c27
+}
+hitSound: unitExplode3
+despawnHit: true
+hitShake: 6.5
+}
+}
+
+
+}
+
+elevation: 0
+drawer: {
+  type: DrawTurret
+  basePrefix: "-lid"
+parts:[
+{
+growX: -0.25
+growY: -0.25
+suffix: "-lid"
+color: ffffffff
+colorTo: 8f8f8f7f
+}
+]
+}
+shownPlanets: [trieg, notva]
+buildVisibility: sandboxOnly

@@ -1,0 +1,14 @@
+type: Conduit
+name: Pipe
+
+requirements:[metaglass/2]
+envEnabled: -1
+liquidCapacity: 7.5
+
+customShadow: false
+leaks: true
+category: liquid
+envEnabled: -1
+research: t-liquid
+researchCostMultiplier: 0.25
+shownPlanets: [trieg] 

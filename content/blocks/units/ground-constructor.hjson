@@ -1,0 +1,34 @@
+type: UnitFactory
+size: 3
+configurable: true
+consumes: {
+  power: 1
+}
+plans: [
+  {
+    unit: rust
+    time: 900
+    requirements:[
+      silicon/40
+      lead/20
+    ]
+  }  {
+    unit: spear
+    time: 1200
+    requirements:[
+      silicon/30
+      lead/50
+    ]
+  }
+]
+requirements: [
+   trieg-aluminum/225
+   lead/150
+   graphite/25
+   silicon/175
+]
+category: units
+name: Ground constructor
+research: t-units
+researchCostMultiplier: 0.15
+shownPlanets: [trieg] 

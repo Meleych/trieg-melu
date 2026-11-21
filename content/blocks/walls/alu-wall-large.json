@@ -1,0 +1,18 @@
+{
+  "type" : "wall",
+  "name" : "Large aluminium wall"
+  "description" : "-protects buildings from enemy bullets."
+  "size" : 2,
+  "health" : 1250,
+  "category" : "defense",
+  "research" : {
+   "parent" : "alu-wall", 
+   "requirements" : [
+    {"item": "trieg-aluminum", "amount" : 25}
+    ]
+   }, 
+  "requirements" : [
+   {"item": "trieg-aluminum", "amount": 24}
+  ],
+  "shownPlanets": [trieg, notva]
+} 

@@ -1,0 +1,77 @@
+type: BurstDrill
+size: 3
+category: production
+name: "Ore extractor"
+drillTime: 240
+drillHardnessMultiplier: 125
+hasPower: true
+tier: 3
+shake: 0.5
+itemCapacity: 20
+
+research: {
+  parent: aluminium-drill
+}
+researchCost: [
+  lead/1
+] 
+
+consumes: {
+power: 0.625
+liquids: {
+liquids:[
+water/0.017776
+]
+
+optional: true
+booster: true
+}
+}
+
+drillEffect: [
+  {
+    type: WaveEffect
+    sizeFrom: 0.1
+    sizeTo: 15
+    strokeFrom: 2
+    strokeTo: 0.1
+    colorFrom: 8f8d87
+    colorTo: 6b6a66
+    lifetime: 40
+  }
+  {
+  type: MineImpact
+  } 
+  {
+  type: MineImpactSteam
+  } 
+  {
+  type: DrillSteam
+  } 
+]
+
+
+requirements: [
+trieg-aluminum/60
+lead/40
+silicon/30
+]
+
+
+squareSprite: false
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -arrow
+    }
+    {
+      type: DrawDefault
+    } 
+  ]
+}
+shownPlanets: [trieg, notva]
+
+

@@ -1,0 +1,171 @@
+type: ItemTurret
+name: Tear
+description: "Targets ground and air."
+size: 2
+
+category: turret
+research: t-shotgun
+researchCostMultiplier: 0.15
+requirements:[
+lead/75
+trieg-aluminum/120
+graphite/40
+]
+  
+reload: 2
+inaccuracy: 5.5
+range: 150
+shootEffect: shootScepterSecondary
+maxAmmo: 20
+ammoPerShot: 1
+trackingRange: 200
+targetAir: true
+targetGround: true
+shootSound: shootAlpha
+
+shoot:{
+shots: 6
+shotDelay: 2
+firstShotDelay: 6
+}
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
+}
+ammoTypes:{
+trieg-aluminum:{
+type: BasicBulletType
+
+speed: 6
+lifetime: 18
+damage: 5.5
+
+width: 8
+height: 12
+
+shrinkX: 0.2
+shrinkY: 0.35
+
+trailColor: e5d7cf
+trailLength: 8
+trailWidth: 1.8
+trailChance: 1
+
+frontColor: ffffff
+backColor: e5d7cf
+
+hitEffect: hitBulletBig
+despawnEffect: hitBulletColor
+shootEffect: shootBig
+
+impact: true
+knockback: 0.15
+
+collidesAir: true
+}
+silicon:{
+type: BasicBulletType
+
+speed: 5.25
+lifetime: 24
+damage: 2
+
+width: 8
+height: 12
+
+shrinkX: 0.2
+shrinkY: 0.35
+
+trailColor: e8dcbf
+trailLength: 8
+trailWidth: 1.8
+trailChance: 1
+
+frontColor: ffffff
+backColor: e8dcbf
+
+homingDelay:15
+homingPower:0.07
+
+hitEffect: hitBulletBig
+despawnEffect: hitBulletColor
+shootEffect: shootBig
+
+impact:true
+knockback:0.1
+
+collidesAir: true
+}
+graphite:{
+type: BasicBulletType
+
+speed: 4.5
+lifetime: 28
+damage: 6.75
+
+width: 8
+height: 12
+
+shrinkX: 0.2
+shrinkY: 0.35
+
+trailColor: e8dcbf
+trailLength: 8
+trailWidth: 1.8
+trailChance: 1
+
+frontColor: ffffff
+backColor: e8dcbf
+
+hitEffect: hitBulletBig
+despawnEffect: hitBulletColor
+shootEffect: shootBig
+
+impact:true
+knockback:0.25
+
+collidesAir: true
+
+reloadMultipier: 0.75
+range:90
+}
+}
+
+drawer:{
+type: DrawTurret
+
+parts:[
+{
+suffix: "-part"
+x: 0
+y: 1.5
+under: true
+
+moves:[
+{
+progress:{
+type: recoil
+}
+
+y:-4
+x:0
+}
+{
+progress:{
+type: warmup
+ops:[
+{
+op: compress
+start:0
+end:0.35
+}
+]
+}
+
+y:-0.6
+}
+]
+}
+]
+}

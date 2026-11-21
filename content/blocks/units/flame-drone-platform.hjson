@@ -1,0 +1,32 @@
+type: UnitCargoLoader
+polyColor: FEB38000
+polySides: 2
+polyRadius: 0
+size: 2
+name: "Building drone platform"
+category: effect
+description: "
+Constructs [accent]Building drones[] to rebuild buildings and assist player
+[red]- Limit 1 (per building)
+[red]- Requires power
+[green]- Building drones rebuild buildings
+"  
+unitType: core-flame-drone
+configurable: false
+customShadow: false
+consumes:{
+power: 0.36
+liquids: {
+liquids:[
+slag/0.217777
+]
+}
+}
+
+requirements:[beryllium/45,graphite/25]
+
+envEnabled: -1
+research: {
+   parent: core-flame
+   researchCostMultiplier: 0.02
+}

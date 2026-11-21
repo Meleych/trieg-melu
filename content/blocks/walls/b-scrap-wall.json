@@ -1,0 +1,18 @@
+{
+  "type" : "wall",
+  "name" : "Large ancient scrap wall"
+  "description" : "-protects buildings from enemy bullets."
+  "size" : 2,
+  "health" : 1250,
+  "category" : "defense",
+  "research" : {
+   "parent" : "a-scrap-wall", 
+   "requirements" : [
+    {"item": "scrap", "amount" : 25}
+    ]
+   }, 
+  "requirements" : [
+   {"item": "scrap", "amount": 24}
+  ],
+  "shownPlanets": [trieg, notva]
+} 

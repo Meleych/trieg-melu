@@ -1,0 +1,87 @@
+	"name": "Water gun",
+	"description": "Shoots small amounts of liquids at enemies or structures. Extinguishes fires.",
+	"type": "LiquidTurret",
+	"health": 320,
+	"size": 2,
+	"reload": 2,
+	"range": 140,
+	fogRadiusMultiplier:0
+	"liquidCapacity": 25
+	"shootEffect": "shootLiquid",
+	"shootSound": "splash",
+	"smokeEffect": "none",
+	"shootCone": 50,
+	"hasLiquids": true,
+	"inaccuracy": 5,
+	"outlineRadius": 4,
+	"squareSprite": false,
+	"recoil": 0
+	"drawer": {
+	"type": "drawTurret",
+	},
+	"ammoTypes": {
+"water": {
+	"type": "liquidBulletType",
+	"liquid": water
+		"shootEffect": "shootLiquid",
+	"knockback": 0.7,
+	"drag": 0.005,
+	"rangeChange": 20,
+	"status": "wet",
+	"lightOpacity": 0
+},
+"oil": {
+	"type": "liquidBulletType",
+	"liquid": oil
+		"shootEffect": "shootLiquid",
+	"drag": 0.01,
+	"status": "tarred",
+},
+"slag": {
+	"type": "liquidBulletType",
+	"drag": 0.01,
+		"shootEffect": "shootLiquid",
+	"damage": 3,
+	"liquid": slag
+	"ammoMultiplier": 3,
+	"status": "melting",
+},
+"cryofluid": {
+	"type": "liquidBulletType",
+	"liquid": cryofluid
+		"shootEffect": "shootLiquid",
+	"drag": 0.01,
+	"ammoMultiplier": 3,
+	"status": "freezing",
+},
+	},
+	"requirements": [
+		{ "item": "trieg-aluminum", "amount": 80 },
+		{ "item": "graphite", "amount": 25 },
+		{ "item": "metaglass", "amount": 40 },
+	],
+	"buildCostMultiplier": 2.0,
+	"category": "turret",
+	"research": "t-turret"
+drawer:{
+type: DrawTurret
+parts:[
+{
+suffix: "-petal1"
+under: false
+moveX: -1.16
+moveY: -1.25
+moveRot: 26
+progress: warmup
+}
+{
+suffix: "-petal2"
+under: false
+moveX: 1.16
+moveY: -1.25
+moveRot: -26
+progress: warmup
+}
+]
+"shownPlanets": [trieg, notva]
+}

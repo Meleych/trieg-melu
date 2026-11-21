@@ -1,0 +1,22 @@
+type: UnitCargoUnloadPoint
+size: 3
+health: 335
+name: Carry dropzone
+description: "Accepts items from carry platform."
+requirements:[
+trieg-aluminum/150
+lead/75
+titanium/50
+]
+
+itemCapacity: 100
+dumpTime: 2.5
+staleTimeDuration: 1
+envEnabled: -1
+customShadow: false
+dumpTime: 2.5
+
+research: carry-platform
+researchCostMultiplier: 0.25
+shownPlanets: [trieg, notva]
+alwaysUnlocked: false

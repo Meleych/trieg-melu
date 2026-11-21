@@ -1,0 +1,12 @@
+type: LiquidJunction
+name: Pipe Junction
+description: Used for crossing two pipes.
+solid: false
+category: liquid
+squareSprite: false
+research: t-pipe
+requirements: [
+  metaglass/8
+  graphite/4
+]
+researchCostMultiplier: 0.5

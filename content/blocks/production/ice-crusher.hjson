@@ -1,0 +1,54 @@
+type: AttributeCrafter
+size: 3
+name: "Ice crusher"
+description: "Crushes ice on bottom of it and generates water"
+
+customShadow: false
+attribute: t-ice
+envEnabled: -1
+
+category: production
+hasLiquids: true
+outputLiquid: water/0.17
+outputItem: ice-item/6
+baseEfficiency: 0
+customShadow: false
+
+displayEfficiency: true
+requirements:[trieg-aluminum/125,lead/75,silicon/50]
+minEfficiency: 0.1
+
+hasPower: true
+consumes: {
+power: 0.666
+}
+research: {
+   parent: t-sand-strate
+   researchCostMultiplier: 0.15
+   objectives: [
+      {
+         type: OnSector
+         preset: forgottenMountains
+      }
+   ]
+}
+requiresUnlock: true
+shownPlanets: [trieg, notva]
+drawer: {
+  type: DrawMulti
+  drawers: [
+     {
+      type: DrawRegion
+      suffix: -bottom
+    }
+         {
+    type: DrawLiquidRegion
+    suffix: -liquid
+    drawLiquid: water
+     }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

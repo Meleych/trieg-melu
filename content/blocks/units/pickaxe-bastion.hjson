@@ -1,0 +1,34 @@
+type: UnitCargoLoader
+polyColor: 84F491FF
+polySides: 3
+polyRadius: 8
+size: 2
+name: Pickaxe platform
+shownPlanets: [trieg, notva]
+category: effect
+description: "
+Constructs [accent]Pickaxes[] to mine ores.
+
+[red]- Limit 1 (per building)
+[red]- Requires power
+[green]- Pickaxes mine resources
+"  
+unitType: pickaxe
+configurable: false
+customShadow: false
+consumes:{
+power: 1
+}
+//buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/250,lead/100, graphite/75, silicon/60, metaglass/40]
+research: {
+   parent: t-units
+   researchCostMultiplier: 0.05
+   objectives: [
+      {
+         type: OnSector
+         preset: pastLandingZone
+      }
+   ]
+}

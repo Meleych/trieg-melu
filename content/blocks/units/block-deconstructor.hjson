@@ -1,0 +1,15 @@
+type: PayloadDeconstructor
+name: Deconstructor
+description: owo
+itemCapacity: 100
+size: 2
+category: distribution
+research: block-constructor
+requirements: [
+  t-iron/80
+]
+squareSprite: false
+deconstructSpeed: 0.8
+consumes: {
+}
+researchCostMultiplier: 0.05

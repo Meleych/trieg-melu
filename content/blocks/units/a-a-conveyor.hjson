@@ -1,0 +1,12 @@
+type: PayloadConveyor
+name: Conveyor
+size: 2
+description: owo
+category: distribution
+research: block-constructor
+requirements: [
+  t-iron/18
+]
+canOverdrive: false
+payloadLimit: 4
+researchCostMultiplier: 0.05

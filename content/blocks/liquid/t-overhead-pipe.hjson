@@ -1,0 +1,15 @@
+type: LiquidBridge
+name: Pipe Bridge
+description: Used for crossing multiple distribution lines or terrain to connect pipes.
+fadeIn: false
+moveArrows: false
+arrowSpacing: 6
+range: 4
+hasPower: false
+category: liquid
+research: t-pipe
+requirements: [
+  graphite/12
+  metaglass/8
+]
+researchCostMultiplier: 0.5

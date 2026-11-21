@@ -1,0 +1,18 @@
+{
+  "type" : "wall",
+  "name" : "Aluminium wall"
+  "description" : "-protects buildings from enemy bullets."
+  "size" : 1,
+  "health" : 300,
+  "category" : "defense",
+  "research" : {
+   "parent" : "t-defense", 
+   "requirements" : [
+    {"item": "trieg-aluminum", "amount" : 25}
+    ]
+   }, 
+  "requirements" : [
+   {"item": "trieg-aluminum", "amount": 6}
+  ],
+  "shownPlanets": [trieg, notva]
+} 

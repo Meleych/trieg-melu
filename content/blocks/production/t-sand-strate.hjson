@@ -1,0 +1,30 @@
+
+  "type": "WallCrafter",
+  "name": "Sand strate",
+  "size": 2,
+  "category": "production",
+  "attribute" : "t-sand",
+  "requirements": [
+    "trieg-aluminum/12",
+    "graphite/6",
+  ],
+  "drillTime": 60,
+  "output": "sand",
+  "fogRadius": 2,
+  "consumes": {
+    "power": 0.06,
+  },
+  "ambientSound": "drill",
+  "ambientSoundVolume": 0.06
+research: {
+   parent: aluminium-drill
+   researchCostMultiplier: 0.15
+   objectives: [
+      {
+         type: OnSector
+         preset: forgottenMountains
+      }
+   ]
+}
+requiresUnlock: true
+shownPlanets: [trieg, notva]
