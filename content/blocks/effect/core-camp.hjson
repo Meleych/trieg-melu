@@ -1,0 +1,27 @@
+type: CoreBlock
+size: 2
+name: "Core: [accent]Camp[]"
+
+#credit: "Melushka"
+description: "This core got few thrusters, can launch at other sectors.
+"
+
+itemCapacity: 1800
+envEnabled: -1
+health: 800
+unitType: hope
+unitCapModifier: 4
+alwaysUnlocked: true
+isFirstTier: false
+shownPlanets: [trieg, notva]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+research: t-effect
+researchCostMultiplier: 0.15
+
+requirements: [
+trieg-aluminum/700
+lead/600
+]
+category: effect

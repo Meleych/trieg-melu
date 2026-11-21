@@ -1,0 +1,36 @@
+type: ConsumeGenerator
+name: Flame generator
+description: Uses flammable resources to generate power.
+size: 2
+category: power
+research: energy-node
+requirements: [
+  graphite/25
+  trieg-aluminum/45
+  lead/30
+]
+consumes: {
+  itemFlammable: {}
+}
+itemDuration: 60
+powerProduction: 1.256789
+ambientSound: loopExtract
+ambientSoundVolume: 0.01
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+} 
+researchCostMultiplier: 0.05
+shownPlanets: [trieg, notva] 

@@ -1,0 +1,7 @@
+type: Floor
+variants: 3
+name: "Metal tile 5 broken"
+attributes:{
+t-scrap: 0.15
+}
+

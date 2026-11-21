@@ -1,0 +1,16 @@
+type: ItemBridge
+name: "Overhead Belt"
+description: "
+Transports item above normal buildings. Bridge range - 3
+"
+
+research: t-catapult
+hasPower: false
+
+range: 4
+transportTime: 15
+envEnabled: -1
+
+requirements:[trieg-aluminum/7,lead/6,graphite/3]
+shownPlanets: [trieg, notva]
+

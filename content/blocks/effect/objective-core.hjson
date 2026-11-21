@@ -1,0 +1,25 @@
+type: CoreBlock
+size: 1
+name: "Objective core"
+
+#credit: "Melushka"
+description: "
+idk
+"
+
+buildVisibilty: sandboxOnly
+itemCapacity: 999999
+envEnabled: -1
+health: 1
+unitCapModifier: 999
+forceDark: true
+unitType: alpha
+alwaysUnlocked: false
+isFirstTier: true
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+requirements: [
+copper/1
+]
+category: effect

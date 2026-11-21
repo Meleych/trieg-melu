@@ -1,0 +1,43 @@
+  "type": "Accelerator",
+  "size": 5,
+  "launchBlock": "core-thruster",
+  "category": "effect",
+  "alwaysUnlocked": true,
+  "launchCandidates": [ "notva" ]
+  "powerBufferRequirement": 50000,
+  "chargeDuration": 220,
+  "buildDuration": 900,
+  "chargeRings": 3,
+  "ringRadBase": 68,
+  "ringColor": "FFD37FFF",
+  "lightningColor": "FFD37FFF",
+  "launchLightning": 24,
+  "lightningLengthMax": 30,
+  "lightningLaunchChance": 0.75,
+  "itemCapacity": 4000,
+  "lightColor": "FFD37FFF",
+  "lightRadius": 50,
+consumes: {
+power: 3.5
+}
+  "scaledHealth": 80,
+  requirements: [
+trieg-aluminum/7500
+lead/4500
+silicon/2500
+]
+  "buildCostMultiplier": 0.5,
+  "buildTimeMultiplier": 4,
+  "hasPower": true,
+  "research": {
+    "parent": "t-planet",
+    "objectives": [
+{
+type: SectorComplete
+preset: pastLandingZone
+}
+]
+  },
+  "researchCostMultiplier": 0.1,
+  "squareSprite": false,
+  "shownPlanets": [ "trieg", "notva" ]

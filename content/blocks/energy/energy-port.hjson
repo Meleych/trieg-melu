@@ -1,0 +1,36 @@
+type: ThermalGenerator
+size: 2
+name: Thermal port
+description: "Generates power from heat"
+
+requirements: [beryllium/60]
+hasLiquids: true
+outputLiquid: slag/0.07
+category: power
+//buildVisibility: sandboxOnly
+  
+shownPlanets: [B-073]
+displayEfficiencyScale: 0.25
+minEfficiency: 0.1
+
+powerProduction: 0.5
+researchCostMultiplier: 0.02
+research: core-flame
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: slag
+    }
+  ]
+}

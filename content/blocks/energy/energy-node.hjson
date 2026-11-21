@@ -1,0 +1,16 @@
+type: PowerNode
+name: Node
+description: Connects with building and nodes.
+size: 1
+squareSprite: false
+laserRange: 8
+maxNodes: 10
+health: 35
+requirements: [
+  trieg-aluminum/5
+  lead/3
+]
+category: power
+research: t-power
+researchCostMultiplier: 0.05
+shownPlanets: [trieg, notva] 

@@ -1,0 +1,32 @@
+type: CoreBlock
+size: 3
+name: "Core: [accent]Thruster[]"
+
+#credit: "Melushka"
+description: "This core got few thrusters, can launch at other sectors.
+
+[accent]- Drone: Patience
+
+[grey]- 3x3
+"
+
+itemCapacity: 3900
+envEnabled: -1
+health: 1600
+unitType: patience
+unitCapModifier: 8
+alwaysUnlocked: false
+isFirstTier: false
+shownPlanets: [trieg]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+research: core-camp
+researchCostMultiplier: 0.25
+
+requirements: [
+trieg-aluminum/1000
+lead/800
+silicon/600
+]
+category: effect

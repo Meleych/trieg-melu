@@ -1,0 +1,27 @@
+{
+	"name": "Landing zone",
+	"description": "Receives items from other sectors. Requires water.",
+	"type": "LandingPad",
+	"health": 2600,
+	"size": 6,
+	"requirements": [
+		{
+			"item": "trieg-aluminum",
+			"amount": 625
+		},
+		{
+			"item": "silicon",
+			"amount": 400
+		},
+		{
+			"item": "lead",
+			"amount": 340
+		},
+	],
+	"category": "effect",
+	"research": "launch-zone",
+"itemCapacity": 650,
+"acceptMultipleItems": false,
+"liquidCapacity": 7000,
+"consumeLiquidAmount": 2500,
+}

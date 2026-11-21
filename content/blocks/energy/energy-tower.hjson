@@ -1,0 +1,21 @@
+type: PowerNode
+name: Energy tower
+description: "Connects with building and nodes. Can connect with one building and really explosive
+"
+size: 3
+baseExplosiveness: 67
+// haha funny number
+// i have same count of dads btw
+squareSprite: false
+laserRange: 65
+maxNodes: 1
+health: 460
+requirements: [
+  trieg-aluminum/125
+  lead/175
+  silicon/150
+]
+category: power
+research: energy-node
+researchCostMultiplier: 0.25
+shownPlanets: [trieg, notva] 

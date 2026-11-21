@@ -1,0 +1,7 @@
+type: Floor
+variants: 1
+baseEfficiency: 0
+displayEfficiency: false
+minEfficiency: 1
+name: "[stat][ Core zone ]"
+allowCorePlacement: true

@@ -1,0 +1,18 @@
+type: Battery
+name: Power Cell
+description: A simple power cell made for holding and storing power.
+health: 175
+size: 2
+squareSprite: false
+consumes: {
+  powerBuffered: 8000
+}
+requirements: [
+  trieg-aluminum/75
+  lead/50
+  graphite/25
+]
+category: power
+research: energy-node
+researchCostMultiplier: 0.5
+shownPlanets: [trieg, notva] 

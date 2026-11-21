@@ -1,0 +1,34 @@
+type: UnitCargoLoader
+unitBuildTime: 900
+buildTime: 625
+health: 360
+polyColor: 00000000
+polySides: 3
+polyRadius: 0
+size: 3
+solid: true
+teamPassAble: true
+name: Arc pylon
+category: effect
+drawTeam: true
+description: "
+[red] - Has limit
+"  
+unitType: repair-pylon-a
+configurable: false
+customShadow: false
+consumes:{
+power: 2.4
+liquids: {
+liquids:[
+water/0.416667
+]
+}
+}
+//buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/150,lead/150, graphite/125, silicon/125, titanium/175]
+
+envEnabled: -1
+research: repair-pylon
+researchCostMultiplier: 0.15

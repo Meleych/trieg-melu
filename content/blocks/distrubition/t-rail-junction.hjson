@@ -1,0 +1,16 @@
+type: Junction
+name: Rail junction
+description: Allows for crossing two rails. 
+health: 65
+size: 1
+speed: 22
+requirements: [
+  lead/2
+  graphite/4
+]
+squareSprite: false
+category: distribution
+research: a-rail
+researchCostMultiplier: 0.05
+shownPlanets: [trieg, notva]
+

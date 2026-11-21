@@ -1,0 +1,13 @@
+type: router
+name: Rail Router
+description: "Behaves like a normal router."
+
+requirements:[lead/3,trieg-aluminum/2]
+speed: 20
+
+research: a-rail
+requiresUnlock: false
+envEnabled: -1
+squareSprite: false
+customShadow: false
+shownPlanets: [trieg, notva]

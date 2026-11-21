@@ -1,0 +1,15 @@
+type: PowerNode
+name: Thermal node
+description: Connects with building and nodes.
+size: 2
+squareSprite: false
+laserRange: 12
+maxNodes: 3
+health: 35
+requirements: [
+  beryllium/20
+]
+category: power
+research: energy-port
+researchCostMultiplier: 0.05
+shownPlanets: [B-073] 

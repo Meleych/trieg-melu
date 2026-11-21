@@ -1,0 +1,36 @@
+type: ForceProjector
+name: Ancient shield
+priority: 10
+health: 190
+size: 2
+
+baseExplosiveness: 15
+
+sides: 4
+radius: 92
+shieldRotation: 0
+cooldownNormal: 0.1
+shieldHealth: 120
+consumeCoolant: false
+hasLiquids: false
+customShadow: false
+category: effect
+
+description: "
+idk
+"
+requirements:[silicon/0]
+buildVisibilty: sandboxOnly
+shownPlanets: [B-073]
+buildtime: 220
+
+envEnabled: -1
+shieldBreakEffect: {
+type: WaveEffect
+sides: 4
+rotation: 0
+strokeFrom: 4
+strokeTo: 0
+sizeFrom: 92
+sizeTo: 32
+}

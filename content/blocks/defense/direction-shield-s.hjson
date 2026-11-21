@@ -1,0 +1,29 @@
+type: UnitCargoLoader
+unitBuildTime: 10
+buildTime: 625
+health: 360
+polyColor: 00000000
+polySides: 3
+polyRadius: 0
+size: 2
+solid: true
+teamPassAble: true
+name: Direction shield
+category: effect
+drawTeam: true
+description: "
+[red] - Has limit
+"  
+unitType: direction-shield-a
+configurable: false
+customShadow: false
+consumes:{
+power: 1.4
+}
+//buildVisibility: sandboxOnly
+
+requirements:[trieg-aluminum/275,lead/175, graphite/150, silicon/175, titanium/75]
+
+envEnabled: -1
+research: t-effect
+researchCostMultiplier: 0.15

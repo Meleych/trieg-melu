@@ -1,0 +1,27 @@
+type: massDriver
+range: 260
+health: 160
+rotateSpeed: 3
+reload: 40
+itemCapacity: 40
+shake: 1
+knockback: 2
+name: Resource driver
+size: 2
+category:distribution
+requirements:[
+  beryllium/25
+  graphite/20
+  silicon/10
+  ]
+loopSoundVolume: 0.1
+research: {
+   parent: a-a-rail
+}
+researchCostMultiplier: 0.05
+hasPower: true
+power: 0.4
+"consumes": {
+"power": 0.4
+}
+shownPlanets: [B-073]

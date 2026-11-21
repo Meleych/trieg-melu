@@ -1,0 +1,4 @@
+type: Floor
+name: bones
+
+//MsX07 idea

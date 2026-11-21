@@ -1,0 +1,30 @@
+type: CoreBlock
+size: 3
+name: "Core: [accent]Alterra[]"
+
+#credit: "Melushka"
+description: "Doesn't have any thrusters, can't launch with this core.
+"
+
+itemCapacity: 3000
+envEnabled: -1
+health: 1200
+unitType: hope
+alwaysUnlocked: true
+isFirstTier: true
+shownPlanets: [trieg, notva]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+research: {
+  planet: trieg
+  root: true
+  name: "[ Trieg - Frozen world ]"
+  requiresUnlock: false
+}
+
+requirements: [
+trieg-aluminum/1600
+lead/800
+]
+category: effect

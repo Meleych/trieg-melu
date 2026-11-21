@@ -1,0 +1,7 @@
+type: Floor
+variants: 3
+name: "Core zone [red][DAMAGED]"
+attributes:{
+t-core-zone: 1
+}
+

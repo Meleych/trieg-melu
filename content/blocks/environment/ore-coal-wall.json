@@ -1,0 +1,8 @@
+{
+  "type": "OreBlock",
+  "itemDrop": "coal",
+  "variants": 3,
+  "wallOre": true,
+  "oreDefault": false,
+  "useColor": true
+}

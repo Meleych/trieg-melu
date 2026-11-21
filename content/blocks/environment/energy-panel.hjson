@@ -1,0 +1,7 @@
+type: Floor
+variants: 5
+name: "Energy tile"
+attributes:{
+t-power: 1
+}
+

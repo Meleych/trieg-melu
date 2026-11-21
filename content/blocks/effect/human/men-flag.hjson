@@ -1,0 +1,25 @@
+type: CoreBlock
+size: 2
+name: "Flag"
+
+#credit: "Melushka"
+description: "Main structure of every village/town/city , destroy it to occupate the region.
+"
+
+itemCapacity: 3000
+allowSpawn: false
+envEnabled: -1
+health: 1200
+unitType: alpha
+alwaysUnlocked: true
+isFirstTier: true
+unitCapModifer: 48
+shownPlanets: [Terra]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+requirements: [
+t-iron/1600
+copper/800
+]
+category: effect

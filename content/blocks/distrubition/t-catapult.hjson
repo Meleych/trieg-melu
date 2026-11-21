@@ -1,0 +1,33 @@
+type: massDriver
+range: 260
+health: 160
+rotateSpeed: 3
+reload: 40
+itemCapacity: 20
+shake: 1
+knockback: 2
+name: Catapult
+size: 2
+category:distribution
+requirements:[
+  trieg-aluminum/25
+  graphite/20
+  lead/10
+]
+loopSoundVolume: 0.1
+research: {
+   parent: trieg-distrubition
+   objectives: [
+      {
+         type: OnSector
+         preset: drownedCliffs
+      }
+   ]
+}
+researchCostMultiplier: 0.3
+hasPower: true
+power: 0.9
+"consumes": {
+"power": 0.4
+}
+shownPlanets: [trieg, notva]

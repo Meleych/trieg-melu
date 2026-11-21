@@ -1,0 +1,60 @@
+type: RegenProjector
+size: 2
+health: 280
+name: Repair Pylon
+range: 20
+healPercent: 0.09
+
+description: "Repairs near buildings using nanobots, requires power.
+
+[accent]- Mending range is square
+[green]- Reliable
+[salmon]- Requires power
+"
+
+requirements:[
+trieg-aluminum/120
+lead/75
+silicon/50
+]
+
+consumes:{
+power: 0.85
+}
+
+category: effect
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: 84F5B444
+suffix: "-top"
+}
+{
+type: DrawPulseShape
+square: false
+color: 84F5B466
+minStroke: 0
+}
+]
+}
+
+envEnabled: -1
+customShadow: false
+baseColor: 84F5B4FF
+
+research: {
+   parent: small-repair-pylon
+   researchCostMultiplier: 0.25
+   objectives: [
+      {
+         type: OnSector
+         preset: pastLandingZone
+      }
+   ]
+}
+  

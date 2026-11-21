@@ -1,0 +1,28 @@
+type: CoreBlock
+size: 4
+name: "Core: [accent]Outpost[]"
+
+#credit: "Melushka"
+description: "This core is stative, can't launch on other sectors
+"
+
+itemCapacity: 6000
+envEnabled: -1
+health: 4600
+unitType: patience
+unitCapModifier: 16
+alwaysUnlocked: false
+isFirstTier: false
+shownPlanets: [trieg]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+research: t-effect
+researchCostMultiplier: 0.25
+
+requirements: [
+trieg-aluminum/3000
+lead/3000
+silicon/2500
+]
+category: effect

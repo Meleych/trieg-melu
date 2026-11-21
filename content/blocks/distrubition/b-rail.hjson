@@ -1,0 +1,23 @@
+type: StackConveyor
+name: Titanium rail
+description: "Transports items in stacks, Outputs like a router.
+
+[grey]- Is a Stack Belt
+[grey]- Outputs like a router
+"
+requirements:[
+lead/1 
+titanium/2
+]
+
+customShadow: false
+
+speed: 0.03333
+baseEfficiency: 1.2
+
+research: a-rail
+requiresUnlock: false
+shownPlanets: [trieg, notva]
+envEnabled: -1
+junctionReplacement: t-rail-junction
+bridgeReplacement: t-overhead-belt

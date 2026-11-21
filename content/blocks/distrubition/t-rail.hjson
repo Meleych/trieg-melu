@@ -1,0 +1,17 @@
+type: StackConveyor
+name: Rail
+description: "Transports items in stacks, Outputs like a router.
+
+[grey]- Is a Stack Belt
+[grey]- Outputs like a router
+"
+requirements:[lead/1]
+
+customShadow: false
+
+speed: 0.01777
+baseEfficiency: 1
+envEnabled: -1
+hideDatabase: true
+junctionReplacement: t-rail-junction
+bridgeReplacement: t-overhead-belt

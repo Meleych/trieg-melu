@@ -1,0 +1,35 @@
+type: CoreBlock
+size: 6
+name: "Core: [accent]Beggining[]"
+
+#credit: "Melushka"
+description: "oWo.
+
+[accent]- Drone: Spark
+
+[green]- cheap
+[grey]- 6x6
+"
+
+itemCapacity: 8000
+envEnabled: -1
+health: 6800
+unitType: beggining-drone
+alwaysUnlocked: true
+isFirstTier: true
+shownPlanets: [Terra]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+research: {
+  planet: Terra
+  root: true
+  name: "[ Terra - The earth 2.0 ]"
+  requiresUnlock: false
+}
+
+requirements: [
+t-iron/1600
+copper/800
+]
+category: effect

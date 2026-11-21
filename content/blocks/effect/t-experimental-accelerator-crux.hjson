@@ -1,0 +1,31 @@
+  "type": "Accelerator",
+  "size": 5,
+  "launchBlock": "core-thruster",
+  "category": "effect",
+  "alwaysUnlocked": true,
+  "launchCandidates": [ "notva" ]
+  "powerBufferRequirement": 50000,
+  "chargeDuration": 220,
+  "buildDuration": 900,
+  "chargeRings": 2,
+  "ringRadBase": 48,
+  "ringColor": "f25555",
+  "lightningColor": "f25555",
+  "launchLightning": 24,
+  "lightningLengthMax": 30,
+  "lightningLaunchChance": 0.75,
+  "itemCapacity": 4000,
+  "lightColor": "f25555",
+  "lightRadius": 50,
+consumes: {
+power: 3.5
+}
+  "scaledHealth": 80,
+  "requirements": [ "lead/2500" ],
+  "buildCostMultiplier": 0.5,
+  "buildTimeMultiplier": 8,
+  "hasPower": true,
+  "buildVisibilty": sandboxOnly,
+  "squareSprite": false,
+  "shownPlanets": [ "trieg", "notva" ]
+buildVisibility: sandboxOnly

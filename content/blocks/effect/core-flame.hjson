@@ -1,0 +1,37 @@
+type: CoreBlock
+size: 4
+name: "Core: [accent]Flame[]"
+
+#credit: "Melushka"
+description: "oWo.
+
+[accent]- Drone: NaN
+
+[green]- cheap
+[grey]- 4x4
+"
+
+itemCapacity: 8000
+envEnabled: -1
+health: 3800
+unitType: u-core-flame
+unitCapModifier: 4
+alwaysUnlocked: true
+isFirstTier: true
+shownPlanets: [B-073]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+research: {
+  planet: B-073
+  root: true
+  name: "[ B-073 - Planet of dust ]"
+  requiresUnlock: false
+}
+
+requirements: [
+beryllium/1700
+graphite/900
+silicon/600
+]
+category: effect

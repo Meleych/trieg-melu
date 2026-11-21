@@ -1,0 +1,24 @@
+type: Duct
+name: "Duct"
+update: true
+itemCapacity: 1
+isDuct: true
+  category: distribution
+  speed: 15
+  displayedSpeed: 1   
+  health: 35
+  acceptsItems: true
+  junctionReplacement: t-rail-junction
+  bridgeReplacement: t-overhead-belt
+  requirements: [
+t-iron/1
+]
+research: {
+  parent: core-beggining
+}
+researchCost: [
+  t-iron/10
+] 
+
+researchCostMultiplier: 1
+

@@ -1,0 +1,27 @@
+type: CoreBlock
+size: 2
+name: "C0r3: [accent]C@mp[] [red][ DAMAGED ][]"
+
+#credit: "Melushka"
+description: "This core got few thrusters, can launch at other sectors.
+"
+
+itemCapacity: 1766
+envEnabled: -1
+health: 649.5
+unitType: hope
+unitCapModifier: 3
+alwaysUnlocked: true
+isFirstTier: false
+shownPlanets: [trieg, notva]
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+alwaysUnlocked: true
+buildVisibilty: sandboxOnly
+
+requirements: [
+trieg-aluminum/658
+lead/439
+]
+category: effect

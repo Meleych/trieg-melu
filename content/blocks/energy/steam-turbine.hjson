@@ -1,0 +1,76 @@
+type: ConsumeGenerator
+name: Steam turbine
+description: Generates power from steam.
+size: 2
+category: power
+research: flame-generator
+requirements: [
+  graphite/50
+  trieg-aluminum/45
+  lead/30
+  metaglass/30
+]
+consumes: {
+  liquid: water/0.4
+  itemFlammable: {}
+}
+hasLiquids: true
+liquidCapacity: 30
+itemDuration: 60
+powerProduction: 4.256789
+generateEffectRange: 0
+generateEffect: {
+  type: RadialEffect
+  rotationSpacing: 22.5
+  amount: 8
+  lengthOffset: 6
+  effect: {
+    type: ParticleEffect
+    baseRotation: 90
+    layer: 63
+    length: 5
+    baseLength: 6
+    particles: 4
+    useRotation: false
+    sizeFrom: 1
+    sizeTo: 0.1
+    lifetime: 120
+    cone: 1
+    layer: 80
+    colorFrom: ffffff00
+    colorTo: ffffff88
+    interp: pow2
+    sizeInterp: pow3In
+  }
+}
+ambientSound: loopExtract
+ambientSoundVolume: 0.01
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -tank-liquid
+      drawLiquid: water
+    }
+    {
+      type: DrawRegion
+      suffix: -cogwheel
+      spinSprite: true
+      rotateSpeed: 1.8
+      x: 0
+      y: 0
+    }
+  ]
+}
+researchCostMultiplier: 0.05
+shownPlanets: [trieg, notva] 

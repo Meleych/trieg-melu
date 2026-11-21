@@ -1,0 +1,13 @@
+{
+"type": "Sorter",
+"name" : "Rail sorter",
+"requirements": [
+  {"item": "lead","amount":4}
+] 
+"category": "distribution",
+"research": "t-rail-router"
+"researchCost": [
+    {"item": "lead","amount":65},
+]
+"shownPlanets": [trieg, notva]
+}

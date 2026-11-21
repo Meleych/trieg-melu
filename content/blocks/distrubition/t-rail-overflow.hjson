@@ -1,0 +1,12 @@
+type: OverflowGate
+requirements:[trieg-aluminum/3,lead/2]
+name: Rail Overflow
+description: "Behaves like a normal Overflow Gate."
+
+research: t-rail-router
+requiresUnlock: false
+customShadow: false
+
+envEnabled: -1
+squareSprite: false
+shownPlanets: [trieg, notva]

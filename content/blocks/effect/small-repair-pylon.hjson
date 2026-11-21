@@ -1,0 +1,28 @@
+type: mendProjector
+health: 90
+size: 1
+reload: 100
+range: 50
+healPercent: 2
+name: "Small repair pylon"
+requirements: [
+trieg-aluminum/60
+lead/40
+silicon/20
+]
+consumes: {
+power: 0.37
+}
+category: effect
+research: {
+   parent: t-effect
+   researchCostMultiplier: 0.25
+   objectives: [
+      {
+         type: OnSector
+         preset: pastLandingZone
+      }
+   ]
+}
+phaseBoost: 0
+phaseRangeBoost: 0

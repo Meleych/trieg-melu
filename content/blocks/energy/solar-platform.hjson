@@ -1,0 +1,31 @@
+type: SolarGenerator
+powerProduction : 0.2
+name: "Solar platform"
+category: power
+research:{
+  parent: energy-node
+  requirements:[
+  lead/9500
+  silicon/8000
+]
+}
+size: 2
+requirements: [
+  lead/95
+  silicon/80
+]
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: 6f6f6f
+}
+{
+type: DrawDefault
+}
+]
+}
+shownPlanets: [trieg, notva] 
