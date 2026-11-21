@@ -1,0 +1,84 @@
+type: GenericCrafter
+name : Silicon furnace
+description : Makes silicon from coal and sand
+craftTime: 250
+size: 3
+separateItemCapacity : true
+consumes: {
+  power: 0.96667
+  items: {
+    items: [
+      coal/5
+      sand/10
+    ]
+  }
+}
+itemCapacity: 40
+outputItem: silicon/10
+category:crafting
+squareSprite: false
+requirements:[
+  trieg-aluminum/75
+  lead/40
+  graphite/20
+]
+shownPlanets: [trieg, notva] 
+research: {
+   parent: t-crafting
+   researchCostMultiplier: 0.05
+   objectives: [
+      {
+         type: OnSector
+         preset: forgottenMountains
+      }
+   ]
+}
+drawer: {
+	type: DrawMulti
+	drawers: [
+		{
+		type: DrawDefault
+		}
+		{
+    	type: DrawFlame
+		}
+]
+}
+
+craftEffect:{
+type: RadialEffect
+lengthOffset: 12
+effect: {
+type: MultiEffect
+effects:[
+{
+type: ParticleEffect
+colorFrom: 4f4f4f55
+colorTo: 7f7f7f00
+sizeFrom: 2
+sizeTo: 6
+particles: 45
+cone: 10
+lifetime: 75
+length: 40
+interp: sineOut
+layer: 108
+}
+{
+type: ParticleEffect
+colorFrom: 4f4f4f55
+colorTo: 7f7f7f00
+sizeFrom: 1
+sizeTo: 4
+particles: 25
+cone: 15
+lifetime: 85
+length: 48
+interp: sineOut
+layer: 108
+}
+]
+}
+}
+requiresUnlock: true
+shownPlanets: [trieg, notva] 
