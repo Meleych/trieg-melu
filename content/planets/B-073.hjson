@@ -1,0 +1,122 @@
+statParent: B-073
+name: B-073
+iconColor: e3905d
+alwaysUnlocked: true
+accessible: true
+sectorSize: 1
+radius: 0.6
+minZoom: 0.8
+bloom: true
+
+generator: SerpuloPlanetGenerator
+icon: command-rally
+orbitRadius: 80
+sectorSize: 2
+startSector: 0
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: true
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+allowWaves: true
+atmosphereColor: e3905d
+orbitSpacing: 40
+orbitRadius: 90
+
+campaignRuleDefaults: {
+	showSpawns: true
+	sectorInvasion: false
+	fog: false
+        clearSectorOnLose: false
+}
+
+clearSectorOnLose: false
+prebuildBase: true
+defaultCore: core-camp
+parent: sun
+solarSystem: sun
+updateLighting: true
+
+"mesh":[
+{
+"type":"NoiseMesh",
+"planet":"B-073",
+"seed":18273,
+"color1":"#2d2421",
+"color2":"#594b43",
+"divisions":7,
+"radius":0.50,
+"octaves":7,
+"persistence":0.62,
+"scl":0.42,
+"mag":1.6
+},
+{
+"type":"NoiseMesh",
+"planet":"B-073",
+"seed":94812,
+"color1":"#9c6543",
+"color2":"#e3905d",
+"divisions":5,
+"radius":0.506,
+"octaves":6,
+"persistence":0.60,
+"scl":1.9,
+"mag":0.8
+},
+{
+"type":"NoiseMesh",
+"planet":"B-073",
+"seed":7611,
+"color1":"#ffb56b",
+"color2":"#ff7b38",
+"divisions":4,
+"radius":0.509,
+"octaves":9,
+"persistence":0.42,
+"scl":8,
+"mag":0.22
+}
+]
+generator: {
+  min: 0.7
+  max: 1.65
+
+  octaves: 5
+  persistence: 0.58
+  scale: 18
+  mag: 1.0
+
+  thresh: 0.78
+
+  foct: 5
+  fmag: 1.2
+  fscl: 28
+  fper: 0.62
+
+  radMin: 650
+  radMax: 720
+
+  stoneChance: 1.82
+  carbonChance: 1.6
+  ferricChance: 1.22
+  iceChance: 0.03
+  berylChance: 0.54
+}
+parent: sun
+solarSystem: sun
+orbitRadius: 12
+orbitSpacing: 12
+radius: 0.52
+drawOrbit: true
+
+atmosphereRadIn: 0.01
+atmosphereRadOut: 0.09
+atmosphereColor: e3905d
+
+bloom: true
+updateLighting: true
+
+//ew vibecoded!11

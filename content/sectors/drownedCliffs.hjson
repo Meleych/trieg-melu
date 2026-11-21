@@ -1,0 +1,21 @@
+planet: trieg
+name: "Drowned cliffs"
+description: "Coal detected in this zone, press coal into graphite.
+Enemy outpost is near, don't worry, you will know what to do with it."
+credit: "[#a0ff94]Poly[gray]loshko [white]"
+sector: 96
+difficulty: 4
+captureWave: 15
+research: {
+  parent: abandonedComplex
+   objectives: [
+      {
+         type: SectorComplete
+         preset: abandonedComplex
+      }
+t-rail-router
+t-shotgun
+]
+}
+
+requiresUnlock: false

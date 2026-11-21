@@ -1,0 +1,54 @@
+radius: 0.5
+statParent: testing-zone
+name: "Testing zone"
+iconColor: 596ab8ff
+alwaysUnlocked: true
+accessible: true
+hasAtmosphere: false
+bloom: false
+
+generator: SerpuloPlanetGenerator
+orbitRadius: 100
+sectorSize: 1
+startSector: 0
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: true
+allowWaves: true
+
+orbitSpacing: 30
+orbitRadius: 100
+
+campaignRuleDefaults: {
+	showSpawns: true
+	sectorInvasion: false
+	fog: false
+  clearSectorOnLose: false
+  allowSectorInvasion: true
+}
+
+clearSectorOnLose: false
+prebuildBase: true
+defaultCore: core-camp
+parent: sun
+solarSystem: sun
+updateLighting: false
+"mesh": [ 
+  {
+  "type": "NoiseMesh",
+  "planet": "testing-zone",
+  "seed": 1,
+  "color1": "#a86c6c",
+  "color2": "#978686",
+  "divisions": 1,
+  "radius": 0.5,
+  "octaves": 2.8,
+  "persistence": 0.9,
+  "scl": 0.5,
+  "mag": 0.1
+  }
+]

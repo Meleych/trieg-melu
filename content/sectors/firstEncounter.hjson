@@ -1,0 +1,17 @@
+planet: trieg
+name: "Muri-Lands"
+description: "Enemy base detected on this sector, destroy it using unit [stat]Rust[]."
+sector: 16
+difficulty: 3.67
+research: {
+  parent: pastLandingZone
+   objectives: [
+      {
+         type: SectorComplete
+         preset: pastLandingZone
+      }
+t-silicon-furnace
+ground-constructor
+]
+}
+requiresUnlock: false

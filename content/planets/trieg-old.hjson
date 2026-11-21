@@ -1,0 +1,108 @@
+radius: 1.46
+statParent: trieg-old
+name: "Ancient trieg"
+iconColor: 596ab8ff
+alwaysUnlocked: false
+accessible: false
+bloom: true
+atmosphereColor: 1d214ec3
+
+generator: SerpuloPlanetGenerator
+orbitRadius: 9999
+sectorSize: 3
+startSector: 0
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: true
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+allowWaves: true
+
+atmosphereColor: 1d214ec3
+orbitSpacing: 30
+orbitRadius: 170
+
+campaignRuleDefaults: {
+	showSpawns: true
+	sectorInvasion: false
+	fog: false
+        clearSectorOnLose: false
+}
+
+clearSectorOnLose: false
+prebuildBase: true
+defaultCore: core-camp
+parent: sun
+#solarSystem: sun
+updateLighting: true
+
+ "mesh": [ 
+  {
+  "type": "NoiseMesh",
+  "planet": "trieg-old",
+  "seed": 83048,
+  "color1": "#ADB1DFFF",
+  "color2": "#a7a9c4FF",
+  "divisions": 5,
+  "radius": 1.4,
+  "octaves": 2.8,
+  "persistence": 0.9,
+  "scl": 1,
+  "mag": 1.1
+  }, 
+  {
+  "type": "NoiseMesh",
+  "planet": "trieg-old",
+  "seed": 30506,
+  "color1": "#A3A8B5FF",
+  "color2": "#A3A8B5FF",
+  "divisions": 4.5,
+  "radius": 1.4,
+  "octaves": 2.7,
+  "persistence": 1.2,
+  "scl": 2,
+  "mag": 1.2
+  }, 
+  { 
+  "type": "NoiseMesh",
+  "planet": "trieg-old",
+  "seed": 40594,
+  "color1": "#A3A8B5FF",
+  "color2": "#A6AFC9FF",
+  "divisions": 1,
+  "radius": 1.4,
+  "octaves": 3.4,
+  "persistence": 0.4,
+  "scl": 1.4,
+  "mag": 1.2
+  }
+]
+cloudMesh: [
+ {
+   type: HexSkyMesh
+   planet: trieg-old
+   speed: 1.21
+   radius: 0.07
+   divisions: 5
+   color: a7a9c4
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.2
+  }
+  {
+   type: HexSkyMesh
+   planet: trieg-old
+   speed: 1.01
+   radius: 0.15
+   divisions: 5
+   color: 767aa6bd
+   octaves: 2
+   persistence: 0.6
+   scl: 0.9
+   thresh: 0.4
+	seed: 2
+  }
+]

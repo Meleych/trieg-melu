@@ -1,0 +1,13 @@
+planet: trieg
+name: "Abandoned complex"
+description: "This sector was a part of massive civilization what lived there, now, it become all dust.
+
+There is no enough enemy to stop your first steps, perfect sector for start."
+sector: 0
+difficulty: 1
+captureWave: 10
+research: {
+  parent: t-terrain
+}
+
+alwaysUnlocked: true

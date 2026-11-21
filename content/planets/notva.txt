@@ -1,0 +1,5 @@
+campaignRuleDefaults: {
+	showSpawns: true
+	fog: false
+    clearSectorOnLose: true
+}

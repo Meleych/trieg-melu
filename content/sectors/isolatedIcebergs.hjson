@@ -1,0 +1,17 @@
+planet: trieg
+name: "Isolated icebergs"
+description: "uwu"
+sector: 176
+difficulty: 3.67
+research: {
+  parent: firstEncounter
+   objectives: [
+      {
+         type: SectorComplete
+         preset: firstEncounter
+      }
+naval-constructor
+fish
+]
+}
+requiresUnlock: false

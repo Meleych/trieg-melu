@@ -1,0 +1,18 @@
+planet: trieg
+name: "Past landing zone"
+description: "uwu"
+sector: 178
+difficulty: 4
+captureWave: 25
+research: {
+  parent: forgottenMountains
+   objectives: [
+      {
+         type: SectorComplete
+         preset: forgottenMountains
+      }
+t-silicon-furnace
+t-glass-kiln
+]
+}
+requiresUnlock: false

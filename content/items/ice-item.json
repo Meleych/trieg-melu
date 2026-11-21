@@ -1,0 +1,15 @@
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0
+hardness: 1
+color: C2BFFBFF
+name: "Ice"
+
+research: {
+  parent: trieg-aluminum
+  objectives: [  
+    ice-item
+  ]
+}
+shownPlanets: [trieg]

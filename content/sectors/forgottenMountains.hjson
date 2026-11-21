@@ -1,0 +1,18 @@
+planet: trieg
+name: "Forgotten mountains"
+description: "This sector is rich with resources and technologies, learn how to mine sand, make silicon and metaglass."
+sector: 36
+credit: "[#a0ff94]Poly[gray]loshko [white]"
+difficulty: 4
+captureWave: 20
+research: {
+  parent: drownedCliffs
+   objectives: [
+      {
+         type: SectorComplete
+         preset: drownedCliffs
+      }
+flame-generator
+]
+}
+requiresUnlock: false

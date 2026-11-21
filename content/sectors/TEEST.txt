@@ -1,0 +1,11 @@
+planet: trieg
+name: "test"
+description: "simply test sector."
+sector: 1
+difficulty: 1
+captureWave: 1
+research: {
+  parent: t-planet
+}
+
+alwaysUnlocked: true

@@ -1,0 +1,15 @@
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0
+hardness: 1
+color: 90907BFF
+name: "Iron"
+
+research: {
+  parent: core-beggining
+  objectives: [  
+    t-iron
+  ]
+}
+shownPlanets: [Terra]

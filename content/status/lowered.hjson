@@ -1,0 +1,5 @@
+name: Lowered
+speedMultiplier: 0.85
+reloadMultiplier: 0.65
+buildSpeedMultiplier: 0.75
+healthMultiplier: 0.75

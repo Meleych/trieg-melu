@@ -1,0 +1,28 @@
+planet: notva
+sector: 0
+name: "Notva"
+
+details: "[lightgrey]Notva is an asteroid sector, Expect a completely random map since its an asteroid sector."
+research: {
+parent: t-experimental-accelerator
+requiresUnlock: false
+objectives:[
+{
+type: Produce
+content: metaglass
+}
+{
+type: Produce
+content: silicon
+}
+{
+type: SectorComplete
+preset: pastLandingZone
+}
+{
+type: SectorComplete
+preset: isolatedIcebergs
+}
+t-experimental-accelerator
+]
+}

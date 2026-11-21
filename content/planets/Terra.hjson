@@ -1,0 +1,176 @@
+name: Terra
+parent: sun
+solarSystem: sun
+
+generator: SerpuloPlanetGenerator
+
+radius: 0.65
+sectorSize: 3
+orbitRadius: 36
+orbitSpacing: 14
+
+icon: planet
+iconColor: 4da6ff
+
+alwaysUnlocked: true
+accessible: true
+
+drawOrbit: true
+bloom: true
+updateLighting: true
+startSector: 15
+
+atmosphereColor: 6ec7ff
+atmosphereRadIn: 0.02
+atmosphereRadOut: 0.16
+
+campaignRuleDefaults:{
+    showSpawns:true
+    fog:false
+    sectorInvasion:true
+}
+"mesh":[
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":91723,
+"color1":"#183d23",
+"color2":"#3d8f4d",
+"divisions":6,
+"radius":0.500,
+"octaves":8,
+"persistence":0.60,
+"scl":0.42,
+"mag":1.7
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":71231,
+"color1":"#4ca55a",
+"color2":"#89d37d",
+"divisions":6,
+"radius":0.505,
+"octaves":7,
+"persistence":0.58,
+"scl":1.8,
+"mag":0.9
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":23145,
+"color1":"#9b9b9b",
+"color2":"#ffffff",
+"divisions":5,
+"radius":0.509,
+"octaves":10,
+"persistence":0.45,
+"scl":7,
+"mag":0.28
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":84512,
+"color1":"#1b5cb8",
+"color2":"#6fdcff",
+"divisions":6,
+"radius":0.497,
+"octaves":5,
+"persistence":0.70,
+"scl":0.18,
+"mag":0.35
+}
+//OwO
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":91723,
+"color1":"#1a4424",
+"color2":"#46a15a",
+"divisions":8,
+"radius":0.500,
+"octaves":8,
+"persistence":0.60,
+"scl":0.42,
+"mag":1.7
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":71231,
+"color1":"#5ab86d",
+"color2":"#95dd89",
+"divisions":7,
+"radius":0.505,
+"octaves":7,
+"persistence":0.58,
+"scl":1.8,
+"mag":0.9
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":45678,
+"color1":"#1b5cb8",
+"color2":"#7fdcff",
+"divisions":6,
+"radius":0.512,
+"octaves":3,
+"persistence":0.72,
+"scl":0.45,
+"mag":1.25
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":81234,
+"color1":"#d9c47a",
+"color2":"#e8d69b",
+"divisions":5,
+"radius":0.507,
+"octaves":4,
+"persistence":0.45,
+"scl":5.5,
+"mag":0.18
+},
+{
+"type":"NoiseMesh",
+"planet":"Terra",
+"seed":23145,
+"color1":"#8e8e8e",
+"color2":"#ffffff",
+"divisions":5,
+"radius":0.509,
+"octaves":10,
+"persistence":0.45,
+"scl":7,
+"mag":0.28
+}
+]
+generator:{
+    min:0.20
+    max:1.65
+
+    octaves:7
+    persistence:0.58
+    scale:16
+    mag:1.15
+
+    thresh:0.68
+
+    foct:6
+    fmag:1.10
+    fscl:24
+    fper:0.62
+
+    radMin:750
+    radMax:900
+
+    stoneChance:0.35
+    carbonChance:0.20
+    ferricChance:0.25
+    iceChance:0.18
+    berylChance:0.15
+}

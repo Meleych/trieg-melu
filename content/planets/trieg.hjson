@@ -1,0 +1,140 @@
+radius: 1.46
+statParent: trieg
+name: Trieg
+iconColor: 596ab8ff
+alwaysUnlocked: true
+accessible: true
+hasAtmosphere: true
+bloom: true
+atmosphereColor: 1d214ec3
+
+generator: SerpuloPlanetGenerator
+orbitRadius: 50
+sectorSize: 3
+startSector: 0
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: true
+allowLegacyLaunchPads: false
+allowSectorInvasion: true
+allowSelfSectorLaunch: false
+allowWaves: true
+
+atmosphereColor: 1d214ec3
+orbitSpacing: 30
+orbitRadius: 100
+
+campaignRuleDefaults: {
+	showSpawns: true
+	sectorInvasion: false
+	fog: false
+        clearSectorOnLose: false
+        allowSectorInvasion: true
+}
+
+clearSectorOnLose: false
+prebuildBase: true
+defaultCore: core-camp
+parent: sun
+solarSystem: sun
+updateLighting: true
+"mesh": [
+  {
+    "type": "NoiseMesh",
+    "planet": "trieg",
+    "seed": 838,
+    "color1": "#E6F4FFFF",
+    "color2": "#AFC8E8FF",
+    "divisions": 7,
+    "radius": 1.40,
+    "octaves": 5,
+    "persistence": 0.55,
+    "scl": 0.55,
+    "mag": 1.35
+  },
+  {
+    "type": "NoiseMesh",
+    "planet": "trieg",
+    "seed": 306,
+    "color1": "#B2BCD5FF",
+    "color2": "#8E97B6FF",
+    "divisions": 5,
+    "radius": 1.4,
+    "octaves": 7,
+    "persistence": 0.62,
+    "scl": 2.8,
+    "mag": 0.55
+  },
+  {
+    "type": "NoiseMesh",
+    "planet": "trieg",
+    "seed": 405,
+    "color1": "#F4FBFFFF",
+    "color2": "#D5E6F8FF",
+    "divisions": 5,
+    "radius": 1.415,
+    "octaves": 9,
+    "persistence": 0.45,
+    "scl": 2.2,
+    "mag": 0.22
+  },
+  {
+    "type": "NoiseMesh",
+    "planet": "trieg",
+    "seed": 902,
+    "color1": "#657196FF",
+    "color2": "#8794B5AA",
+    "divisions": 4,
+    "radius": 1.4,
+    "octaves": 3,
+    "persistence": 0.8,
+    "scl": 0.3,
+    "mag": 0.9
+  }
+]
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    planet: trieg
+    speed: 0.35
+    radius: 0.08
+    divisions: 4
+    color: d8ecffcc
+    octaves: 5
+    persistence: 0.35
+    scl: 1.0
+    thresh: 0.12
+    seed: 1
+  }
+  {
+    type: HexSkyMesh
+    planet: trieg
+    speed: 0.85
+    radius: 0.16
+    divisions: 5
+    color: a5b9df90
+    octaves: 4
+    persistence: 0.55
+    scl: 1.8
+    thresh: 0.36
+    seed: 2
+  }
+  {
+    type: HexSkyMesh
+    planet: trieg
+    speed: 1.8
+    radius: 0.24
+    divisions: 4
+    color: ffffff25
+    octaves: 2
+    persistence: 0.75
+    scl: 4
+    thresh: 0.65
+    seed: 3
+  }
+]
+
+atmosphereRadIn: 0.01
+atmosphereRadOut: 0.09
+atmosphereColor: ffffff25
